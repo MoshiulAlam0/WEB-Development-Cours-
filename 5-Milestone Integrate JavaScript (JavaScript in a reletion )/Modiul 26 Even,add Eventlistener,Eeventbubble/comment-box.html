@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div id="Post-div">
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem amet, adipisci quibusdam
+                molestias rerum quasi voluptatum voluptate eveniet, ratione suscipit voluptates cum harum ad repellat
+                alias consectetur a, fugit possimus. Facilis libero sint atque unde saepe repudiandae quo quos
+                exercitationem neque sit, animi soluta harum beatae voluptate voluptas fuga!
+            </P>
+            <P>Vel a rerum molestias amet maiores possimus hic, minus fuga animi esse ipsum. Omnis eum hic obcaecati
+                soluta at, rerum et voluptatem accusamus molestiae, quibusdam ratione nesciunt perspiciatis sunt iure
+                aspernatur, nam in. Assumenda nihil maxime ipsum, sint exercitationem maiores veniam cum necessitatibus
+                voluptatum, debitis, officia saepe facere voluptas incidunt!
+            </P>
+            <P>Velit neque, quas voluptatem, laborum minima error ipsa odio repellendus nam minus quo facere sapiente
+                nulla a voluptates. Vitae, nulla sit at aspernatur, repudiandae culp temporprovident odit dolorem
+                porro corporis praesentium dolore assumenda rem quam facere ab exercitationem omnis eaque? Voluptas,
+                architecto quaerat. Tempore asperiores dolore nemo sed harum!
+            </P>
+        </div>
+        <br>
+        <br>
+        <textarea name="" id="comment-box" cols="70" rows="6"></textarea>
+        <br><br>
+        <button id="Post-button">Post</button>
+    </section>
+    <script>
+        // step 1. add the event listener inside the Post buttton
+        const postButton = document.getElementById('Post-button').addEventListener('click', function(){
+            // step 2 . get the text inside the text aria 
+            const commentBox = document.getElementById('comment-box');
+            const valuesOfCommentBox = commentBox.value
+            // step 3. creat new p tag and set text of the text aria inside the new p tag as a innerText
+            const newPtag = document.createElement('p');
+            newPtag.innerText = valuesOfCommentBox;
+            // step 4. add p tag inside the post-div using appendChild 
+            const postDiv = document.getElementById('Post-div');
+            postDiv.appendChild(newPtag);
+            // step 5. clear the text aria by set null-value of taxtAria
+            commentBox.value = '';
+        });
+    </script>
+</body>
+
+</html>

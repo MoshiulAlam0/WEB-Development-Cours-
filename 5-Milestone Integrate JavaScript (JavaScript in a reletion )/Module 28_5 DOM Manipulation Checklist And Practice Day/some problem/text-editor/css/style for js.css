@@ -1,0 +1,22 @@
+/* for aling tools  */
+.center{text-align: center;}
+.middel{display: flex;justify-content: center;align-items: center;}
+.start{text-align: start;}
+.end{text-align: end;}
+.top{vertical-align: top;}
+/* .bottom{display: flex;justify-content: center; align-items: flex-end;} */
+.bottom{display: flex;justify-content: center;align-items: flex-end;}
+
+
+/* for size tools */
+.H1{font-weight: bold;font-size: 2.125rem;}
+.H2{font-weight: bold;font-size: 1.875rem;}
+.H3{font-weight: bold;font-size: 1.5rem;}
+.H4{font-weight: bold;font-size: 1.25rem;}
+.H5{font-weight: bold;font-size: 1.125rem;}
+.H6{font-weight: bold;font-size: 1rem;}
+
+/* for style tools */
+.italic{font-style: italic;}
+.normal{font-style: normal;}
+.bold{font-weight: bold;}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellcome to DOM Event</title>
+</head>
+<style>
+    p {
+        color: aqua;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #color-div {
+        width: 400px;
+        height: 140px;
+        background-color: rgb(119, 101, 101);
+        border-radius: 9px;
+    }
+    button{
+        padding: 8px 32px ;
+        border-radius: 8px;
+        border: none;
+        margin:7px 2px;
+    }
+</style>
+
+
+<body>
+    <section>
+        <div id="color-div">
+            <p>you can change page color by use this button </p>
+            <div id="buttonList">
+                <!-- way 1 is here -->
+                <div>
+                    <button onclick="document.body.style.backgroundColor='pink';">pink</button>
+                    <!-- way 2 -->
+                    <button onclick="redColor()">red</button>
+                    <button id="btn3">blue</button>
+                    <button id="btn4">orange</button>
+                    <button id="btn5">green</button>
+                    <button id="btn6">yellow</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // way 2
+        function redColor() {
+            document.body.style.backgroundColor = 'red';
+        }
+    </script>
+    <!-- way 3, way 4, way 5, way 6, more is here inside the script link tag -->
+    <script src="Script/color.js"></script>
+</body>
+
+</html>

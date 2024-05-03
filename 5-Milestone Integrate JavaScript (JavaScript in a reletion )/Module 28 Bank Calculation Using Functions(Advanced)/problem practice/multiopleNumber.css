@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(gradient-numerology-background/8423417.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+body::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0,.3);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(101, 85, 206,.3);
+    backdrop-filter: blur(4px);
+    gap: 20px;
+    width: 352px;
+    height: 290px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 40px 4px rgba(0, 0, 0, 0.5);
+}
+#input-field{
+    padding: 14px 19px;
+    border-radius: 4px;
+    border: 1px solid rgb(29, 216, 4);
+}
+button{
+    width: 95px;
+    height: 50px;
+    font-size:large;
+    font-weight: bold;
+    background-color: rgb(24, 117, 194,.1);
+    backdrop-filter: blur(4px);
+    color: white;
+    letter-spacing: 1px;
+    border: 1px  solid yellowgreen ;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: blue;
+}
+#div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.p-div{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* p tag class */
+.result{
+    color: rgb(231, 231, 231);
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.style{
+color: rgb(143, 202, 34);
+font-size: 70px;
+font-weight: bold;
+letter-spacing: 2px;
+}

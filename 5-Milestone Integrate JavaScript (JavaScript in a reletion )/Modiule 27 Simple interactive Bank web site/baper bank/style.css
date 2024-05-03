@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:wght@600&family=Poppins:wght@600&family=Press+Start+2P&family=Roboto&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgba(43, 2, 2, 0.4)url(img/pexels-pixabay-259132.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    /* font-family: 'Acme', sans-serif; */
+}
+/* logo container  */
+#logo-container{
+margin: 0;
+padding: 0;
+}
+#logo-img{
+    width: 179px;
+    height: 91px;
+    left: 47px;
+    top: 20px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+
+/* main -section container  */
+#money-calculetion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* -------------------------------main-container  --------------------*/
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background: rgba(172, 172, 212, 0.8);
+    width: 900px;
+    height: 445px;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 13px;
+    box-shadow: 1px 8px 40px 3px;
+}
+
+/* h1 main header  */
+#main-header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Acme', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Press Start 2P', system-ui; */
+    /* font-family: 'Roboto', sans-serif; */
+    letter-spacing: 12px;
+
+}
+
+#s1 {
+    color: rgb(228, 0, 0);
+}
+
+#s2 {
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-style: italic;
+}
+
+#s3 {
+    color: rgb(192, 88, 14);
+}
+
+/* <!-- -----------------------------div of balance-container-------------------------> */
+#balance-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 95px;
+}
+
+.cnt {
+    width: 217px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 30px; */
+    border-radius: 5px;
+}
+
+.cnt h2 {
+    margin: 6px 0 0 20px;
+    color: white;
+
+}
+
+#container1 {
+    background-color: rgba(68, 47, 189, 0.8);
+}
+
+#container2 {
+    background-color: rgba(170, 80, 28, 0.8);
+}
+
+#container3 {
+    background-color: rgba(29, 99, 58, 0.8);
+}
+
+/* <!-- -----------------div of deposid & withdrow container --------------- --> */
+#deposid-withdrow-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cnt4-5 {
+    width: 450px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+#container4 {
+    background-color: rgba(22, 115, 138, 0.8);
+}
+
+#container5 {
+    background-color: rgba(99, 29, 81, 0.8);
+}
+
+#container-text {
+    margin-right: 90px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+.cnt-input {
+    padding: 11px 15px;
+    width: 209px;
+    margin: 6px 0;
+    border: 1px solid tomato;
+    background-color: rgba(238, 234, 234, 0.8);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: .5px;
+    border-radius: 9px;
+}
+
+.cnt-input::-webkit-inner-spin-button,
+.cnt-input::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+
+}
+
+.cnt-button {
+    margin-top: 15px;
+    padding: 11px 15px;
+    width: 110px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 7, 87);
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+ transition: .1s;
+}
+.cnt-button:hover{
+    background-color: blue;
+    transform: rotate(3deg)
+}

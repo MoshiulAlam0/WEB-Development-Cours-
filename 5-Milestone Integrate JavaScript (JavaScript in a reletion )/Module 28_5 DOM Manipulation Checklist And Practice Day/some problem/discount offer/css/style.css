@@ -1,0 +1,242 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+}     
+    
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: steelblue;
+
+}
+/* nav */
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0 5px 0;
+    background-color: #ffd900;
+    padding: 12px 0;
+}
+.item-list{
+width: 70%;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+list-style: none;
+}
+.item{
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 12px;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 153, 0);
+    cursor: pointer;
+    transition: .2s;
+}
+.item:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(10, 240, 228, .2);
+    border: 1px solid rgb(17, 0, 255);
+
+}
+/* header  */
+.mani-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card-section */
+/* header */
+.header{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(250, 250, 250);
+    letter-spacing: 1.5px;
+    margin: 25px 0;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;;
+    gap: 44px;
+    margin-top: 25px;
+}
+.card-header{
+    margin-top: 20px;
+    width:50%;
+    padding: 12px 0;
+    border-radius: 6px;
+}
+
+.card-h2{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: rgb(255, 217, 0);
+    text-align: center;
+
+}
+hr{
+    width: 70%;
+    height: 1px;
+    border: none;
+    background-color: orange;
+
+}
+/* <!-- discount optionn --> */
+.main-discount-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+/* .discount-header */
+.discount-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0 14px 0;
+}
+.discount-h2{
+    font-size: 27px;
+    color:#ffd900;
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+}
+#dis30{
+font-size: 29px;
+color: rgb(159, 245, 61);
+}
+.discount-text{
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+    /* opacity: .8; */
+}
+/* .discount-area-btn */
+.discount-area-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-area{
+    border: 1.5px solid rgb(37, 37, 223, .6);
+    border-radius: 3px;
+    padding: 6px 10px;
+    background-color: rgb(198, 226, 236);
+    color: rgb(38, 41, 214);
+    font-size: 20px;
+    font-weight: bold;
+}
+.discount-btn{
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    background-color: rgb(47, 196, 42);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    margin-top: 13px;
+   cursor: pointer;
+   transition: .3s;
+}
+.discount-btn:hover{
+    background-color: coral;
+}
+/* <!-- card option  --> */
+
+.main-card-container{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 28px 28px 28px;
+    border-radius: 6px;
+    box-shadow: 7px 1px 20px -6px;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(22, 22, 233, .2);
+    border-radius: 6px;
+    margin-bottom: 19px;
+}
+.photo{
+    width: 200px;
+    border-radius: 6px;
+    width: 240px;
+    border-radius: 6px;   
+}
+/* card-about */
+.card-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.sunglass-name{
+    color: rgb(41, 56, 66);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+    margin-top: 26px;
+}
+.about-sunglass{
+    color: gray;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    opacity: .7;
+}
+.price{
+    color: rgb(218, 31, 62);
+    font-size: 29px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    
+}
+.card-btn{
+    font-size: 21px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgb(66, 16, 201);
+    padding: 8px 26px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.card-btn:hover{
+    background-color: rgb(22, 8, 83);
+}

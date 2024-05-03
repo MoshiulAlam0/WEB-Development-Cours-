@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello i am DOM Here</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <h1>WEB DEVOLEPMENT</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT (.js)</li>
+        <li>JAVA (.js)</li>
+    </ul>
+    <h1>i like to eat :</h1>
+    <ul>
+        <li>bananas</li>
+        <li id="frood2">mangos</li>
+        <li>lichi</li>
+    </ul>
+    <h1>i like to travel:</h1>
+    <ul>
+        <li class="travel">coxsbazar</li>
+        <li class="travel">senmartin</li>
+        <li class="travel">sondarban</li>
+        <li>kataban</li>
+    </ul>
+    <section class="container">
+        <ul>
+            <li>i am an item 1</li>
+            <li>i am an item 2</li>
+            <li>i am an item 3</li>
+            <li>i am an item 4</li>
+        </ul>
+    </section>
+
+    <!-- -----------------------you look at me , script is here -------------------->
+    <script>
+        /* option 1: document.getElementByThetagName();
+        it is used to get the all releted tag*/
+        const liCulections = document.getElementsByTagName('li');
+        console.log(liCulections);
+
+        /* option 2: document.getElementById();
+         you will use the document.getElementById of tag 
+         to get the specific element  */
+        const singelfrood = document.getElementById('frood2');
+        console.log(singelfrood.innerText);
+
+        /*option 3 : document.getElementsByClassName();
+        you will use the document.getElementsByClassName of tag 
+        to get the some  elements */
+        const elements = document.getElementsByClassName('travel');
+        console.log(elements);
+        for (const element of elements) {
+            console.log(element.innerText);
+        }
+
+        /* option 4:document. querySelector();
+        it is used like of css code to get frist single element */
+        const singel = document.querySelector('.container li');
+        console.log(singel);
+
+        /* option 5: document.querySlelectorAll();
+        it is used like of css code to get all element together
+        */
+        const allElement = document.querySelectorAll('.container li')
+        console.log(allElement);
+        for (const element of allElement) {
+            console.log(element.innerText);
+        }
+    </script>
+    <!-- // to add external js file -->
+    <script src="js/dom.js"></script>
+</body>
+
+</html>

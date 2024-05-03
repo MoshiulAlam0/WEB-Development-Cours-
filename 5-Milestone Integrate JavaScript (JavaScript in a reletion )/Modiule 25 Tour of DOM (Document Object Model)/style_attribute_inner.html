@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="verb-container">
+        <h1 id="modal-header" class="helo green-bg">Mordal Verb:</h1>
+        <div class="div">
+            <ul>
+                <li>can</li>
+                <li>could</li>
+                <li>may</li>
+                <li>might</li>
+                <li>should</li>
+                <li>would</li>
+                <li>must</li>
+                <li>need</li>
+                <li>dear</li>
+                <li>will be able to</li>
+                <li>used to</li>
+            </ul>
+        </div>
+        <div class="div">
+            <ul>
+                <li>can</li>
+                <li>could</li>
+                <li>may</li>
+                <li>might</li>
+                <li>should</li>
+                <li>would</li>
+                <li>must</li>
+                <li>need</li>
+                <li>dear</li>
+                <li>will be able to</li>
+                <li>used to</li>
+            </ul>
+        </div>
+        <div class="div">
+            <ul>
+                <li>can</li>
+                <li>could</li>
+                <li>may</li>
+                <li>might</li>
+                <li>should</li>
+                <li>would</li>
+                <li>must</li>
+                <li>need</li>
+                <li>dear</li>
+                <li>will be able to</li>
+                <li>used to</li>
+            </ul>
+        </div>
+
+    </section>
+    <script>
+        // number 1 = use of style :
+        // way 1
+        const header = document.getElementById('modal-header');
+        header.style.color = 'white';
+        header.style.textAlign = 'center';
+        console.log(header.style.backgroundColor = 'green');
+        // number 2 = use of getAttidute :
+
+        // to get attributes by id and className 
+        console.log(header.getAttribute('id'));
+        console.log(header.getAttribute('class'));
+        // to set attribute and velue of attribute 
+        header.setAttribute('title', 'hello i am a attribute');
+        console.log(header);
+
+        //number 3: use of classList , classList.add, classList.remove 
+        console.log(header.classList);
+        // classList.add
+        header.classList.add('new-class');
+        console.log(header.classList);
+        // classList.remove
+        header.classList.remove('helo');
+        console.log(header.classList);
+        // innerText & innerHTML
+        const allHTML = document.getElementsByClassName('div');
+        console.log(allHTML);
+        console.log(allHTML[0].innerText);
+        console.log(allHTML[0].innerHTML);
+
+    </script>
+</body>
+
+</html>

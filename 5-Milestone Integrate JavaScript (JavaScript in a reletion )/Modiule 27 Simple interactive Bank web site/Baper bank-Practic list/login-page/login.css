@@ -1,0 +1,136 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:wght@600&family=Poppins:wght@600&family=Press+Start+2P&family=Roboto&display=swap');
+/* font-family: 'Acme', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Press Start 2P', system-ui; */
+/*font-family: 'Roboto', sans-serif; */
+
+/* baody */
+body {
+    font-family: 'Acme', sans-serif;
+    background: url(img/10047289.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#main-login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* logo image  */
+#log-img {
+    width: 200px;
+    position: absolute;
+    right: 127px;
+    top: 79px;
+    opacity: .9;
+}
+
+/* baper bank text  */
+#logo-header {
+    position: absolute;
+    top: 248px;
+    right: 40px;
+    margin: 0;
+    padding: 7px 10px;
+    letter-spacing: 4px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    opacity: .9;
+    /* -webkit-text-stroke: .1vw #EFDC17; */
+}
+/* span  */
+#span1{
+    color: #EFDC17;
+    letter-spacing: 1px;
+    font-size: 49px;
+    margin: 29px;
+}
+#span2{
+color: rgb(205, 241, 3);
+/* color: #7BB5F4; */
+font-size: 61px;
+}
+
+/* main-section  */
+#login-container {
+    /* background-color: rebeccapurple; */
+    /* background: transparent; */
+    background-color: rgba(101, 55, 148, 0.2);
+    backdrop-filter: blur(3px);
+    width: 319px;
+    height: 332px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 8px 24px -7px black;
+    border-radius: 9px;
+}
+
+/* login div  */
+#login-card {
+    background-color: transparent;
+    width: 301px;
+    height: 318px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* div of item list  */
+#item-list {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 281px;
+    height: 297px;
+
+}
+
+/* h2 / header  */
+#header {
+    font-size: 35px;
+    margin: 0 0 7px 0;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    
+}
+
+/* all input button  */
+.input-button {
+    padding: 13px 18px;
+    width: 210px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: .5px solid blue;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: .5px;
+
+}
+
+/* login - button  */
+#login-button {
+    padding: 12px 29px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(66, 30, 194);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 4px;
+    margin-top: 34px;
+}
+
+#login-button:hover {
+    background-color: rgb(51, 59, 177);
+}

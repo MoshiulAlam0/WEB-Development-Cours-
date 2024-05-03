@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+background-color: rgb(88, 88, 158);
+}
+
+/* main ------------ */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .editor-main-container -------------- */
+.editor-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+}
+
+/* header--------- */
+.text-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-text {
+    font-size: 1.7rem;
+    letter-spacing: 9px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#text {
+    letter-spacing: 2px;
+    font-size: 3rem;
+    color: black;
+    font-weight: 900;
+}
+
+/* .writing-tools-container----------- */
+.writing-tools-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgb(8, 37, 99);
+    padding: 6px;
+    width: 90%;
+}
+
+/* tools-bar---------------- */
+.tools-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 7px;
+    background-color: rgb(80, 80, 151);
+    border: 1px solid rgb(8, 37, 99);
+    width: 100%;
+    padding: 9px 0;
+
+}
+
+/* .icon----------- */
+.icon {
+    width: 15px;
+    cursor: pointer;
+}
+
+/*-------all Toools---------- */
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* background-color: rgb(96, 108, 116);
+    width: 240px;
+    padding: 4px;
+    border-radius: 6px; */
+}
+
+.tool-text {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(35, 34, 37);
+}
+
+.tool-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+hr {
+    width: 99%;
+}
+
+/* size section------------ */
+.size-input {
+    width: 50px;
+    padding: 4px;
+}
+
+.size-input:focus {
+    outline-color: blue;
+}
+
+
+
+/* color section -------- */
+.color-tool-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.color-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+    width: 99px;
+    list-style: none;
+    /* background-color: aquamarine; */
+}
+
+.box {
+    width: 12px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 6px;
+    cursor: pointer;
+}
+/* font-color */
+#box1{background-color: white; color: white;}
+#box2{background-color: black;color: black;}
+#box3{background-color: red;color: red;}
+#box4{background-color: yellow;color: yellow;}
+#box5{background-color: green;color: green;}
+#box6{background-color: blue;color: blue;}
+#box7{background-color: gray;color: gray;}
+#box8{background-color: violet;color: violet;}
+/* page color  */
+#page-box1{background-color: white; color: white;}
+#page-box2{background-color: black;color: black;}
+#page-box3{background-color: red;color: red;}
+#page-box4{background-color: yellow;color: yellow;}
+#page-box5{background-color: green;color: green;}
+#page-box6{background-color: blue;color: blue;}
+#page-box7{background-color: gray;color: gray;}
+#page-box8{background-color: violet;color: violet;}
+
+/* writing-option----------- */
+.writing-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-area {
+    width: 80%;
+    height: 430px;
+    padding: 20px;
+    font-size: 16px;
+    
+}
+
+/* footer oprion  */
+.footer{
+    padding: 2px 0;
+}
+.footer-p{
+    color: rgb(35, 34, 37);
+    letter-spacing: 5px;
+    font-size: 13px;
+}

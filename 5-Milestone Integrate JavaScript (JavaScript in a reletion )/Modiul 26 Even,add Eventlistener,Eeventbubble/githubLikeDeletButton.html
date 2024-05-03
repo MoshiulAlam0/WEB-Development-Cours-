@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret information</title>
+</head>
+
+
+<body>
+    <h2 id="h2">My Secret Information</h2>
+    <p style="color: rgb(175, 83, 83);">{you can hide/show me by typing delete/show}</p>
+    <input type="text" id="inputfleld" placeholder="type 'delete'">
+    <button id="delete-button" disabled> Delete </button>
+    <script>
+        // STEP-1
+        const inputfleld = document.getElementById('inputfleld');
+        inputfleld.addEventListener('keyup', function (event) {
+            const keyupvalue = event.target.value;
+            const deleteButton = document.getElementById('delete-button');
+            if (keyupvalue.toLowerCase() === 'delete') {
+                deleteButton.removeAttribute('disabled');
+            }
+            else {
+                deleteButton.setAttribute('disabled', true)
+            }
+        });
+        // STEP-2
+        const deleteButton = document.getElementById('delete-button');
+        deleteButton.addEventListener('click', function () {
+            const h2 = document.getElementById('h2');
+            h2.style.display = 'none';
+            inputfleld.value = '';
+            deleteButton.setAttribute('disabled', true)
+        });
+
+
+    </script>
+</body>
+
+</html>

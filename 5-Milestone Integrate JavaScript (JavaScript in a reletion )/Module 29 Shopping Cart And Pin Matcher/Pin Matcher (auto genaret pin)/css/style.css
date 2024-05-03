@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(87, 87, 136);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+/* header start ------------ */
+.header-text{
+    font-size: 2.3rem;
+    color: white;
+    font-weight: bold;
+}
+.matcher{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+}
+.main-container {
+    width: 60%;
+    /* background-color: steelblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* .genaretor-container section is here ----------------- */
+.pin-container {
+    width: 310px;
+    height: 360px;
+    background-color: rgb(51, 44, 99);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1px;
+    gap: 23px;
+    box-shadow: 1px 3px 20px -1px;
+    transition: .3s;
+
+}
+.pin-container:hover{
+    transform: translateY(-4px);
+}
+.genaretor-container{
+    justify-content: space-evenly;
+    gap: 45px;
+}
+.genretor-input {
+    padding: 12px 17px;
+    background-color: rgb(64, 50, 90);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.genretor-input::-webkit-outer-spin-button,
+.genretor-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.genaretor-btn {
+    font-size: .9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(21, 52, 92);
+    width: 37%;
+    height: 32%;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 12px 5px rgb(46, 66, 156);
+    cursor: pointer;
+    transition: .3s;
+    
+}
+.genaretor-btn:hover{
+    background-color: rgb(23, 57, 100);
+    box-shadow: 0 0 17px 8px rgb(43, 65, 165);
+    transform: scale(1.06);
+}
+
+/* pin pad section is here  */
+.number-btn-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.number-pad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    width: 230px;
+}
+.number-box{
+    font-size: 25px;
+    font-weight: bold;
+    width: 63px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(59, 59, 87);
+    color: white;
+    transition: .3s
+}
+.number-box:hover{
+    background-color: rgb(36, 36, 58);
+    transform: scale(1.1);
+}
+.set-pin-btn{
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgb(112, 96, 214);
+    padding: 12px 14px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;  
+}
+.set-pin-btn:hover{
+    background-color: rgb(72, 52, 201);
+    transform: scale(1.1);
+}
+/* pin-check------------- */
+.pin-check{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100px;
+}
+.massege{
+    display: none;
+    font-size: 1.01rem;
+    color: rgb(225, 229, 235);
+    letter-spacing: 1.5px;
+    background-color: rgb(45, 53, 85);
+    padding: 4px 16px;
+    border-radius: 8px;
+    margin: 6px 0;
+    text-align: center;
+    transition: .7s;
+}
+
+.massege:hover{
+    background-color: rgb(35, 35, 73);
+    transform: scale(1.01);
+}
+
+.icon{
+    font-size: 20px;
+    margin-right: 6px;
+    margin-top: 2px;
+}
+/* foooter :start------------ */
+.footer-p{
+    color: rgb(180, 172, 194);
+    letter-spacing: 3px;
+    opacity: .5;
+}

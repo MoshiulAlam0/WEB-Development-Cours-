@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Event</title>
+</head>
+<style>
+    #body {
+        border: 16px solid red;
+    }
+
+    #item-container {
+        border: 10px solid green;
+    }
+
+    #item-list {
+        border: 5px solid rgb(221, 0, 147);
+    }
+
+    #item2 {
+        border: 2px solid blue;
+    }
+    #item3 {
+        border: 2px solid rgb(218, 132, 175);
+    }
+</style>
+
+<body id="body">
+    <section id="item-container">
+        <h1>Explore Bubble Event:</h1>
+        <ul id="item-list">
+            <li id="item1">Lorem, ipsum.</li>
+            <li id="item2">Modi, magni.</li>
+            <li id="item3">Exercitationem, ut.</li>
+            <li id="item4">Odio, quas.</li>
+            <li id="item5">Quod, unde!</li>
+            <li id="item6">Aspernatur, voluptas.</li>
+        </ul>
+    </section>
+    <script>
+        // item2 
+        const item2 = document.getElementById('item2');
+        item2.addEventListener('click', function (event) {
+            console.log('item-2 frist has been clicked');
+            // you may chack this program by uncomment of these line
+            event.stopPropagation();
+            // event.stopImmediatePropagation();
+        })
+        // item2 
+        document.getElementById('item2').addEventListener('click', function (event) {
+            console.log('item-2 third has been clicked');
+
+        })
+        // item3 
+        const item3 = document.getElementById('item3');
+        item3.addEventListener('click', function (event) {
+            console.log('item-3 second has been clicked');
+            // you may chack this program by uncomment of these line
+            // event.stopPropagation();
+            // event.stopImmediatePropagation();
+
+        })
+        // ul 
+        const itemList = document.getElementById('item-list');
+        itemList.addEventListener('click', function (event) {
+            console.log('item-list has been clicked');
+        })
+        // section 
+        const section = document.getElementById('item-container');
+        section.addEventListener('click', function (event) {
+            console.log('item-container has been clicked');
+        })
+        // fullBody 
+        const fullbody = document.getElementById('body');
+        fullbody.addEventListener('click', function (event) {
+            console.log('full-body has been clicked');
+        })
+    </script>
+</body>
+
+</html>

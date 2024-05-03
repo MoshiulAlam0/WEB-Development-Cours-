@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- option 1 -->
+    <h1 id="handelar-Heading">Is The handelarOnclick Work</h1>
+    <button onclick="handelarOnclick()">Chack Handelar</button>
+    <!-- option 2 -->
+    <button id="btn2">text change by the add lestener</button>
+    <!-- option 2 ultra version  -->
+    <p id="p">please update any text</p>
+    <input id="input-button" type="text">
+    <button id="btn3">Update</button>
+
+
+    <script>
+        // option 1
+        function handelarOnclick() {
+            const handelarHeading = document.getElementById('handelar-Heading');
+            handelarHeading.innerText = 'The handelarOnclick has been worked';
+            handelarHeading.style.color = 'red';
+            handelarHeading.style.backgroundColor = 'green';
+        }
+        // option 2
+        document.getElementById('btn2').addEventListener('click', function () {
+            const handelarHeading = document.getElementById('handelar-Heading');
+            handelarHeading.innerText = 'i am changed by the add event listener';
+            handelarHeading.style.backgroundColor = 'white';
+            handelarHeading.style.color = 'black';
+        })
+        // option 2 ultra version 
+        document.getElementById('btn3').addEventListener('click', function () {
+            const inputeButton = document.getElementById('input-button');
+            const p = document.getElementById('p');
+            const valuesOfinputButton = inputeButton.value;
+            p.innerText = valuesOfinputButton;
+            inputeButton.value = '';
+
+            //    extra inputer blank text thake jene jeno kaj na kore arki  
+/* 
+            if (valuesOfinputButton === '') { }
+            else {
+                p.innerText = valuesOfinputButton;
+                inputeButton.value = '';
+            }
+
+ */
+
+        })
+
+
+    </script>
+</body>
+
+</html>

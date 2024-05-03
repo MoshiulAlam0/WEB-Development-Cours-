@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #808080;
+}
+
+/* start header */
+.editor-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080;
+
+}
+
+.head-h2 {
+    color: white;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.x {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+}
+
+.editor {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.footer-p, .header-p {
+    text-align: center;
+    color: rgb(73, 73, 73);
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    padding: 0 0 6px 0;
+}
+.header-hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #3d3e3f;
+    margin-bottom: 6px;
+}
+
+
+/* Editor container  */
+.tools-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.tools-h3 {
+    color: #3d3e3f;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.tool-cotainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(97, 95, 95);
+    /* border: 1px solid #509cff; */
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* size */
+.size-input-btn{
+    display: flex;
+    margin-right: auto;
+    gap: 5px;
+    padding: 6px 0;
+}
+.size-input{
+    width: 50px;
+    background-color: #3d3e3f;
+    color: rgb(153, 151, 151);
+    padding: 5px 12px;
+    font-size: 12.5px;
+}
+.size-btn{
+    width: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(153, 151, 151);
+    background-color: #3d3e3f;
+    border-radius: 3px;
+    padding: 4px 0;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.reset-btn{
+    text-align: center;
+    
+}
+
+.tools-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.tool {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: gray;
+    padding: 2px 4px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: rgb(51, 50, 50);
+}
+
+.tool:hover {
+    color: rgb(194, 186, 186);
+}
+
+/* <!-- section-writing and color panel  --> */
+.write-colorPanel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 9px 9px 0 9px;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(97, 95, 95);
+    border-radius: 3px;
+    padding: 13px;
+}
+
+.color-h3 {
+    color: #3d3e3f;
+    font-size: 16px;
+    font-weight: bolder;
+    /* letter-spacing: 1px; */
+}
+
+.tool-input {
+    width: 90%;
+    background-color: #3d3e3f;
+    color: rgb(153, 151, 151);
+    padding: 5px 12px;
+    font-size: 12.5px;
+}
+
+.apply-btn{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(153, 151, 151);
+    background-color: #3d3e3f;
+    border-radius: 3px;
+    /* padding: 4px 10px; */
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.apply-btn:hover{
+    color: #808080;
+    background-color: #2d2d2e;
+}
+
+
+.color-hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #3d3e3f;
+}
+
+/* color boxs  */
+.color-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 4px;
+    border-radius: 6px;
+    background-color: #3d3e3f;
+    padding: 7px;
+}
+
+.box {
+    width: 40px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: red;
+    cursor: pointer;
+    transition: .3s;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.box-1{background-color: white; color: white; font-size: 2px;}
+.box-2{background-color: black; color: black; font-size: 2px;}
+.box-3{background-color: orange; color: orange; font-size: 2px;}
+.box-4{background-color: yellow; color: yellow; font-size: 2px;}
+.box-5{background-color: green; color: green; font-size: 2px;}
+.box-6{background-color: blue; color: blue; font-size: 2px;}
+.box-7{background-color: indigo; color: indigo; font-size: 2px;}
+.box-8{background-color: red; color: red; font-size: 2px;}
+.box-9{background-color: violet; color: violet; font-size: 2px;}
+.box-10{background-color: lightseagreen; color: lightseagreen; font-size: 2px;}
+
+
+/* .<!-- writing field option  --> */
+.writing-field {
+    background-color: #3d3e3f;
+    padding: 4px;
+    height: 100%;
+}
+.page{
+    width: 760px;
+    height: 308px;
+    background-color: white;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+
+#text-area {
+    width: 760px;
+    height: 55px;
+    resize: none;
+    font-size: 17px;
+    padding: 10px;
+    background-color: rgb(95, 158, 160);
+    color: white;
+}
+
+#text-area:focus {
+    outline: none;
+    border: 1.5px solid rgba(51, 255, 0, 0.6);
+    box-shadow: 0 0 11px -2px rgba(51, 255, 0, 0.6);
+}

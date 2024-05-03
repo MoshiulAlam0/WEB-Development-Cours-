@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event summay</title>
+</head>
+
+<body>
+    <section>
+        <h1>Event Summary:</h1>
+        <button id="btn1" onclick="colorGreen()">green</button>
+        <button id="btn2">Yellow</button>
+        <br>
+        <br>
+        <input type="gmail" id="input">
+    </section>
+    <script>
+        // to add event hendelar 
+        // option 1: 
+        function colorGreen() {
+            document.body.style.backgroundColor = 'green';
+        };
+        // option 2:  
+        const button2 = document.getElementById('btn2');
+        button2.addEventListener('click', function () {
+            document.body.style.backgroundColor = 'yellow';
+        });
+        // option 3 using keyup event : 
+        const inputButton = document.getElementById('input');
+        inputButton.addEventListener('keyup', function (event) {
+            console.log(event.target.value);
+        })
+    </script>
+</body>
+
+</html>

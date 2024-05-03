@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="/css/styel.css">
+    <link rel="stylesheet" href="css/style for js.css"> 
+</head>
+
+<body>
+    <!-- header start  -->
+    <header class="editor-header">
+        <h2 class="head-h2">Te<span class="x">X</span>t <span class="editor">Editor</span></h2>
+        <p class="header-p">Free For You...</p>
+    </header>
+    <hr class="header-hr">
+    <!--toolsbar section start  -->
+    <div class="tools-bar">
+        <div class="tool-cotainer">
+            <h3 class="tools-h3">Aling</h3>
+            <ul class="tools-list">
+                <li id="aling-center" class="tool">Center</li>
+                <li id="aling-middel" class="tool">Middel</li>
+                <li id="aling-start" class="tool">Start</li>
+                <li id="aling-end" class="tool">End</li>
+                <li id="aling-top" class="tool">Top</li>
+                <li id="aling-bottom" class="tool">Bottom</li>
+            </ul>
+            <button id="reset-aling" class="apply-btn size-btn reset-btn ">Reset</button>
+        </div>
+        <div class="tool-cotainer">
+            <h3 class="tools-h3">Size</h3>
+            <ul class="tools-list">
+                <li id="size-h1" class="tool">H1</li>
+                <li id="size-h2" class="tool">H2</li>
+                <li id="size-h3" class="tool">H3</li>
+                <li id="size-h4" class="tool">H4</li>
+                <li id="size-h5" class="tool">H5</li>
+                <li id="size-h6" class="tool">H6</li>
+            </ul>
+            <div class="size-input-btn">
+                <input id="size-input" class=" size-input" type="number" placeholder="Size">
+                <button id="ok" class="apply-btn size-btn">Ok</button>
+                <button id="reset-size" class="apply-btn size-btn reset-btn ">Reset</button>
+            </div>
+        </div>
+        <div class="tool-cotainer">
+            <h3 class="tools-h3">Style</h3>
+            <ul class="tools-list">
+                <li id="italic" class="tool">Italic</li>
+                <li id="normal" class="tool">Normal</li>
+                <li id="bold" class="tool">Bold</li>
+            </ul>
+            <button id="reset-style" class="apply-btn size-btn reset-btn ">Reset</button>
+        </div>
+    </div>
+    <!-- section-writing and color panel  -->
+    <section class="write-colorPanel-container">
+        <!-- page color option -->
+        <div class="color-container">
+            <h3 class="color-h3">Page Color</h3>
+            <hr class="color-hr">
+            <input id="Page-input" class="tool-input" type="text" placeholder="your color[#,rgb,name]">
+            <button id="Page-apply-btn" class="apply-btn">Apply</button>
+            <hr class="color-hr">
+            <h3 class="color-h3">Defoult Color</h3>
+            <div class="color-boxs">
+                <div class="box  box-1" id="page-box1">white</div>
+                <div class="box  box-2" id="page-box2">black</div>
+                <div class="box  box-3" id="page-box3">orange</div>
+                <div class="box  box-4" id="page-box4">yellow</div>
+                <div class="box  box-5" id="page-box5">green</div>
+                <div class="box  box-6" id="page-box6">blue</div>
+                <div class="box  box-7" id="page-box7">indigo</div>
+                <div class="box  box-8" id="page-box8">red</div>
+                <div class="box  box-9" id="page-box9">violet</div>
+                <div class="box  box-10" id="page-box10">lightseagreen</div>
+            </div>
+        </div>
+        <!-- writing field option  -->
+        <div class="writing-field">
+            <div id="balnk-page" class="page">
+                <p id="balnk-page-text"></p>
+            </div>
+            <textarea id="text-area" placeholder="Write Here .........."></textarea>
+        </div>
+        <!-- color-panel option  -->
+        <div class="color-container">
+            <h3 class="color-h3">Text Color</h3>
+            <hr class="color-hr">
+            <input id="text-input" class="tool-input" type="text" placeholder="your color">
+            <button id="text-btn" class="apply-btn">Apply</button>
+            <hr class="color-hr">
+            <h3 class="color-h3">Defoult Color</h3>
+            <div class="color-boxs">
+                <div class="box  box-1" id="text-box1">white</div>
+                <div class="box  box-2" id="text-box2">black</div>
+                <div class="box  box-3" id="text-box3">orange</div>
+                <div class="box  box-4" id="text-box4">yellow</div>
+                <div class="box  box-5" id="text-box5">green</div>
+                <div class="box  box-6" id="text-box6">blue</div>
+                <div class="box  box-7" id="text-box7">indigo</div>
+                <div class="box  box-8" id="text-box8">red</div>
+                <div class="box  box-9" id="text-box9">violet</div>
+                <div class="box  box-10" id="text-box10">lightseagreen</div>
+            </div>
+        </div>
+    </section>
+    <p class="footer-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, asperiores</p>
+    <!-- script is here  -->
+    <script src="js/commun-function.js"></script>
+    <script src="js/writing field.js"></script>
+    <script src="js/tools bar.js"></script>
+    <script src="js/page color.js"></script>
+    <script src="js/text color.js"></script>
+
+</body>
+
+</html>

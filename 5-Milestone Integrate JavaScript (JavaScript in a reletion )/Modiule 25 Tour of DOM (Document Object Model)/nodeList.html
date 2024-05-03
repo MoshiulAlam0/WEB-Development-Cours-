@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: white; background-color: black;">Node List</h1>
+    <section>
+
+        <div id="div1">
+            <h2>chaild gula ber korar jonno :</h2>
+            <ul>
+                <li>chaildNode[]</li>
+            </ul>
+        </div>
+        <div class="div2">
+            <h2>porer chaild ber korte :</h2>
+            <ul>
+                <li>chailNode[].nextSibling</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="div3">
+            <h1>porber chaild ber korte :</h1>
+            <ul>
+                <li>chaildNode[].prevusSibling</li>
+            </ul>
+        </div>
+        <div class="div4">
+            <h1>element creat korte , element push korte , chaild ar bap ke ber korte :</h1>
+            <ul>
+                <li>creatElement</li>
+                <li>appendChaild</li>
+                <li>perentNode</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        // use of childNodes
+        const chaild = document.getElementById('div1');
+        console.log(chaild.childNodes);
+        const child2 = document.getElementsByClassName('div2')
+        console.log(child2[0].childNodes);
+        //    use of childNodes by index
+        console.log(chaild.childNodes[3]);
+        // age kon child ace ta dekhte 
+        console.log(chaild.childNodes[2].previousSibling);
+        //porer kon chaid ace ta dekhte 
+        console.log(chaild.childNodes[3].nextSibling);
+        //child ar bap ke ber korte 
+        console.log(chaild.parentNode.parentNode);
+
+        // new element creat korte 
+        const newLi = document.createElement('li');
+        // to set values in innerText
+        newLi.innerText = 'hell0 i am a new li , i have created by createElement';
+        console.log(newLi);
+        // ai new li ke chaild ar ul ar vitore li a set kora  holo appendChild diye ar ki 
+        chaild.childNodes[3].appendChild(newLi);
+
+    </script>
+</body>
+
+</html>

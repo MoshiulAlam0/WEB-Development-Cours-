@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Event Delegate :</title>
+</head>
+<style>
+    #item-container {
+        border: 4px solid red;
+    }
+
+    .item {
+        border: 2px solid grey;
+
+    }
+</style>
+
+<body>
+    <section>
+        <h1>Explore Event Delegate :</h1>
+        <ul id="item-container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Modi, libero distinctio!</li>
+            <li class="item">Error, ea suscipit.</li>
+            <li class="item">Tenetur, excepturi corrupti!</li>
+            <li class="item">Eos, quisquam dolore!</li>
+            <li class="item">Reiciendis, voluptate consequuntur?</li>
+        </ul>
+    </section>
+    <section>
+        <textarea name="" id="text-area" cols="60" rows="5"></textarea>
+        <br>
+        <button id="add-button">Add new text</button>
+    </section>
+    <script>
+        // for remove item 
+        const itemContainer = document.getElementById('item-container');
+        itemContainer.addEventListener('click', function (Event) {
+            itemContainer.removeChild(event.target)             // frist way (it's best way)
+            // event.target.parentNode.removeChild(event.target)              // second way 
+        });
+        // for add new item form textarea
+        const addButton = document.getElementById('add-button');
+        addButton.addEventListener('click', function () {
+            const newLi = document.createElement('li');
+            newLi.classList.add('item');
+            const textArea = document.getElementById('text-area');
+            const valueOfTextArea = textArea.value;
+            if (valueOfTextArea !== '') {
+                newLi.innerText = valueOfTextArea;
+                const ul = document.getElementById('item-container');
+                ul.appendChild(newLi);
+                textArea.value = '';
+            }
+        })
+
+    </script>
+</body>
+
+</html>

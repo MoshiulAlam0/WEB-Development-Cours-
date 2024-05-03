@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To day we will learn about of more event </title>
+</head>
+<body>
+    <h2>More Event:</h2>
+    <p>1.mousemove</p>
+    <p>2.mouseenter</p>
+    <p>3.keydown</p>
+    <p>4,keyup</p>
+    <div>
+        <button id="btn-1">Submit</button>
+        <input type="text" id="input-button"></input>
+    </div>
+    <script>
+        // event 1. mouseenter
+        /* const button1 = document.getElementById('btn-1');
+        button1.addEventListener('mouseenter', function(){
+            console.log('hello i am worked');
+        }) */
+// event2.mousemove
+        /* const button1 = document.getElementById('btn-1');
+        button1.addEventListener('mousemove', function(){
+            console.log('mouse is being moving on me ');
+        }) */
+        // event 3.keydown
+         /* const inputButton = document.getElementById('input-button');
+        inputButton.addEventListener('keydown', function(event){
+            console.log(event.target.value);
+        })  */
+        // event4.keyup
+        const inputButton = document.getElementById('input-button');
+        inputButton.addEventListener('keyup', function(event){
+            console.log(event.target.value);
+        }) 
+
+        
+
+    </script>
+</body>
+</html>

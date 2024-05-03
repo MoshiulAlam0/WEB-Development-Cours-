@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto pin Genaretor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="header-text">PIN<span class="matcher">Matcher</span></h2>
+    </header>
+    <main class="main-container">
+        <div class="genaretor-container  pin-container">
+            <input type="number" name="" id="genretor-input" class="genretor-input" placeholder="Type pin">
+            <button id="genaretor-btn" class="genaretor-btn">GENARET PIN</button>
+        </div>
+        <div class="pin-type-container   pin-container">
+            <input type="number" name="" id="number-input" class="genretor-input" placeholder="Type pin">
+            <div class="number-btn-container">
+                <div class="number-pad">
+                    <button class="number-box" id="number-box1">1</button>
+                    <button class="number-box" id="number-box2">2</button>
+                    <button class="number-box" id="number-box3">3</button>
+                    <button class="number-box" id="number-box4">4</button>
+                    <button class="number-box" id="number-box5">5</button>
+                    <button class="number-box" id="number-box6">6</button>
+                    <button class="number-box" id="number-box7">7</button>
+                    <button class="number-box" id="number-box8">8</button>
+                    <button class="number-box" id="number-box9">9</button>
+                    <button class="number-box" id="number-box-">-</button>
+                    <button class="number-box" id="number-box0">0</button>
+                    <button class="number-box" id="number-boxC">C</button>
+                </div>
+            </div>
+            <button id="match-pin-btn" class="set-pin-btn">Match Pin</button>
+
+        </div>
+    </main>
+    <section class="pin-check">
+            <p id="input-pin-massege" class="massege"><i class="fa-solid fa-key icon" style="color: #ff0000;"></i>Please Input PIN For Open The Door</p>
+            <p id="currect-massege" class="massege"><i class="fa-solid fa-check icon" style="color: #13d110;"></i> PIN is currect, secret door is open for you</p>
+            <p id="incurrect-massege" class="massege "><i class="fa-solid fa-xmark icon" style="color: #e81111;"></i>PIN is incurrect, plase try agin</p>
+    </section>
+    <footer class="footer">
+        <p class="footer-p">Lorem ipsum, nsectetur adipisicing elit. Sit, ad laudadi nisi, eveniet earum, odit nemo essene</p>
+    </footer>
+
+    <!-- scripts are here  -->
+    <script src="js/commun-function.js"></script>
+    <script src="js/pin-genarator.js"></script>
+    <script src="js/Number-pad.js"></script>
+    <script src="js/check-pin.js"></script>
+</body>
+
+</html>

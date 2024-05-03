@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME of Bap er bank</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <section id="main-section">
+        <p id="bank-header">Let's get some <span id="header-span">Moooney</span> !!</p>
+        <div id="balance-containe">
+            <div id="deposid">
+                <div class="balance-div">
+                    <p id="deposid-text" class="balance-text">Deposid</p>
+                    <p id="deposid-balance" class="money-text">$<span>0</span></p>
+                </div>
+            </div>
+            <div id="withdrow">
+                <div class="balance-div">
+                    <p id="withdrow-text" class="balance-text">withdrow</p>
+                    <p id="withdrow-balance" class="money-text">$<span>0</span></p>
+                </div>
+            </div>
+            <div id="balance">
+                <div class="balance-div">
+                    <p id="main-balance-text" class="balance-text">Balance</p>
+                    <p id="main-balance" class="money-text">$<span>1240</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="deposid-withdrow-container">
+            <div id="input-deposid">
+              <div class="input-div">
+                <p id="please-deposid" class="please-text">Please Deposid</p>
+                <input type="number" id="deposid-input" class="input" placeholder="$$ Deposid amount"><br>
+                <button id="deposid-button" class="button">Deposid</button>
+              </div>
+            </div>
+            <div id="input-withdrow">
+                <div class="input-div">
+                 <p id="please-withdrow" class="please-text">Please Withdrow</p>
+                <input type="number" id="withdrow-input" class="input" placeholder="$$ Withdrow amount"><br>
+                <button id="withdrow-button" class="button">Withdrow</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- script is here  -->
+    <script src="home.js"></script>
+</body>
+
+</html>

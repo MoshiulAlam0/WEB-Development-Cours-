@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page(baper bank)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-500	">
+    <header class="mb-12 mt-16">
+        <h2 class=" font-semibold text-lime-400 text-4xl text-center font-mono ">Let's Get Some <span
+                class=" text-white font-bold font-mono">Mooooney</span>
+        </h2>
+    </header>
+    <!-- main  -->
+    <main class=" flex flex-col justify-center items-center m-auto mt-12">
+        <section class="flex gap-x-11">
+            <div class="flex-1 w-64 h-32 bg-fuchsia-700  rounded-md shadow-2xl shadow-black">
+                <h2 class="ml-12 mt-7 text-2xl text-white font-semibold tracking-wide1">Deposit</h2>
+                <p class="ml-12 mt-1 text-2xl text-white font-bold tracking-wide1">$<span id="deposid-money">00</span></p>
+            </div>
+            <div class="flex-1 w-64 h-32 bg-sky-600 rounded-md shadow-2xl shadow-black">
+                <h2 class="ml-12 mt-7 text-2xl text-white font-semibold tracking-wide1">Withdrow</h2>
+                <p class="ml-12 mt-1 text-2xl text-white font-bold tracking-wide1">$<span id="Withdrow-money">00</span></p>
+            </div>
+            <div class="flex-1 w-64 h-32 bg-amber-700  rounded-md shadow-2xl shadow-black ">
+                <h2 class="ml-12 mt-7 text-2xl text-white font-semibold tracking-wide1">Balance</h2>
+                <p class="ml-12 mt-1 text-2xl text-white font-bold tracking-wide1">$<span id="main-balance">1200</span></p>
+            </div>
+        </section>
+        <section class="flex gap-x-24 mt-9 ">
+            <div class="flex-1 w-96 h-48 bg-emerald-700 hover:bg-emerald-800 rounded-md shadow-2xl shadow-black">
+                <h2 class="ml-12 mt-7 mb-3 text-2xl text-white font-semibold tracking-wider">Deposit</h2>
+                <input type="number" id="deposit-input-field" class="block m-auto py-2 px-12 rounded " placeholder="$ Deposit amount">
+                <button id="deposit-button" class=" block m-auto mt-4 w-28 h-11 bg-sky-600 hover:bg-sky-700 rounded text-white text-lg font-medium tracking-wider" >Withdrow</button>
+            </div>
+            <div class="flex-1 w-96 h-48 bg-purple-800 hover:bg-purple-900 rounded-md shadow-2xl shadow-black">
+                <h2 class="ml-12 mt-7 mb-3 text-2xl text-white font-semibold tracking-wider">Withdrow</h2>
+                <input id="Withdraw-input-field" type="number" class="block m-auto py-2 px-12 rounded " placeholder="$ Withdrow amount">
+                <button id="Withdrow-button" class=" block m-auto mt-4 w-28 h-11 bg-sky-600 hover:bg-sky-700 rounded text-white text-lg font-medium tracking-wider" >Withdrow</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/home.js"></script> <!--<< script is here  -->
+</body>
+
+</html>

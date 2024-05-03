@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/someClassForJS.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="editor-main-container">
+            <header class="text-header">
+                <h2 class="header-text"><span id="text">Text</span>Decuretor</h2>
+            </header>
+            <section class="writing-tools-container">
+                <div class="tools-bar">
+                    <div class="tools-container">
+                        <p class="tool-text">Aling</p>
+                        <div class="tool-icon">
+                            <img id="aling-center" src="icon/align-left-solid.svg" alt="" class="icon">
+                            <img id="aling-left" src="icon/align-center-solid.svg" alt="" class="icon">
+                            <img id="aling-right" src="icon/align-right-solid.svg" alt="" class="icon">
+                        </div>
+                    </div>
+                    <div class="tools-container">
+                        <p class="tool-text">Style</p>
+                        <div class="tool-icon">
+                            <img id="style-bold" src="icon/bold-solid.svg" alt="" class="icon">
+                            <img id="style-italic" src="icon/italic-solid.svg" alt="" class="icon">
+                            <img id="style-underline" src="icon/underline-solid.svg" alt="" class="icon">
+                        </div>
+                    </div>
+                    <div class="tools-container">
+                        <p class="tool-text">Size</p>
+                        <div class="size-tool-icon">
+                            <input id="size-input" type="number" value="16" class="size-input">
+                            <img src="icon/font.png" alt="" class="icon">
+                        </div>
+                    </div>
+                    <div class="tools-container">
+                        <p class="tool-text">Font Color</p>
+                        <div class="color-tool-icon">
+                       <div>
+                        <input id="font-color-input" type="color">
+                        <img src="" alt="" class="icon">
+                       </div>
+                            <ul class="color-box">
+                                <li class="box" id="box1">white</li>
+                                <li class="box" id="box2">black</li>
+                                <li class="box" id="box3">red</li>
+                                <li class="box" id="box4">yellow</li>
+                                <li class="box" id="box5">green</li>
+                                <li class="box" id="box6">blue</li>
+                                <li class="box" id="box7">gray</li>
+                                <li class="box" id="box8">pink</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tools-container">
+                        <p class="tool-text">Page Color</p>
+                        <div class="color-tool-icon">
+                       <div>
+                        <input id="page-color-input" type="color">
+                        <img src="" alt="" class="icon">
+                       </div>
+                            <ul class="color-box">
+                                <li class="box" id="page-box1">white</li>
+                                <li class="box" id="page-box2">black</li>
+                                <li class="box" id="page-box3">red</li>
+                                <li class="box" id="page-box4">yellow</li>
+                                <li class="box" id="page-box5">green</li>
+                                <li class="box" id="page-box6">blue</li>
+                                <li class="box" id="page-box7">gray</li>
+                                <li class="box" id="page-box8">violet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="writing-page">
+                    <textarea name="" id="text-area" class="text-area" cols="30" rows="10"
+                    placeholder="Writing here......."></textarea>
+                </div>
+            </section>
+            <footer class="footer">
+                <p class="footer-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </footer>
+        </section>
+    </main>
+    <!-- script are here  -->
+    <script src="js/commoun-function.js"></script>
+    <script src="js/text-tools.js"></script>
+    <script src="js/color.js"></script>
+</body>
+
+</html>
