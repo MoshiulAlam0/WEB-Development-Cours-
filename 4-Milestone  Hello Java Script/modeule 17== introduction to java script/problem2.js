@@ -1,0 +1,10 @@
+var mathematics = 75.25 ;
+var bailogy = 65 ;
+var chemistry = 80 ;
+var physice = 35.45;
+var bangla = 99.50;
+var sum = mathematics + bailogy + chemistry + physice + bangla;
+var everage = sum / 5;
+everage = everage .toFixed(2);
+everage = parseFloat (everage);
+console.log(everage);

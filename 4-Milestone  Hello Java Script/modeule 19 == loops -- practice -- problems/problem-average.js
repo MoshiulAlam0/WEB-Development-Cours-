@@ -1,0 +1,13 @@
+var mathMark = 75.25;
+var biologyMark = 65;
+var chemistryMark = 80;
+var physicMark = 35.45;
+var banglaMark = 99.50;
+var totalsubject = 5;
+var totalMarks = mathMark + biologyMark + chemistryMark + physicMark + banglaMark;
+console.log(totalMarks);
+var average = totalMarks / totalsubject;
+var pointfixt = average.toFixed(2);
+console.log(pointfixt);
+var convertAverage = parseFloat(pointfixt);
+console.log(convertAverage);
