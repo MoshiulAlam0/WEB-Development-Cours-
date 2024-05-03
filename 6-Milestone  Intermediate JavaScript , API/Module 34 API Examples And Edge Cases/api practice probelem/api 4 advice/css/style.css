@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* <!-- header is here  --> */
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: rgb(30, 189, 210);
+}
+.logo-con h3{
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.input-con input{
+padding: 6px 8px;
+border: none;
+font-weight: bold;
+letter-spacing: .8px;
+}
+.input-con input:focus{
+    outline: none;
+}
+.input-con input::placeholder{
+    font-size: 9px;
+    opacity: .4;
+}
+.input-con button{
+    margin-left: 4px;
+    padding: 6px 8px;
+    border: none;
+    color: white;
+    background-color: #2e0cf1;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.input-con button:hover{
+    background-color: blueviolet;
+}
+
+/* main section  */
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin: 20px;
+}
+.rendom-ad-container{
+    width: 400px ;
+    height: 300px;
+    background-color: #2121c05e;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 0 10px -5px;
+}
+.rendom-advice h3{
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.rendom-advice q{
+letter-spacing: 1px;
+color: #636264;
+}
+
+.aling{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.aling hr{
+width: 100px;
+height: 2px;
+border: none;
+background-color: #8877e7;
+
+gap: 30px;
+align-items: center;
+
+}
+.aling-div {
+height: 20px;
+width: 2px;
+background-color: #04cfdd;
+}

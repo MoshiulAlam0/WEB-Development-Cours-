@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+}
+/* <!-- header and nav , search section are here  --> */
+/* header start  */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: slateblue;
+    padding: 20px 0;
+}
+
+.head-h2 {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+}
+
+.head-p {
+    letter-spacing: 2px;
+    font-size: 9px;
+    color: white;
+}
+
+.head-h2 span {
+    color: rgb(238, 124, 31);
+    font-size: 30px;
+}
+
+
+/* nav is start  */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-container ul li {
+    padding: 6px 0px;
+    margin: 0 8px;
+    transition: .10s;
+}
+
+.nav-container ul li:hover {
+    color: rgb(255, 187, 0);
+    border-bottom: .5px solid rgb(255, 187, 0);
+}
+
+
+/* main body section is start  */
+/* meals-header is start  */
+.meals-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 60px 0;
+    position: relative;
+}
+
+.meals-header::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/top-view-fried-chicken-fries-with-copy-space.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    /* opacity: .5 ; */
+
+}
+
+.meals-types-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 67px;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.types ul li {
+    font-size: 13px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    background-color:rgba(5, 5, 255, 0.5);
+    padding: 3px 10px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.types ul li:hover{
+    color: greenyellow;
+
+}
+.types ul li p{
+    font-size: 22px;
+}
+#list-p{
+    display: inline-block;
+}
+.types li:hover ul{
+    display: block
+}
+.types ul li ul {
+    position: absolute;
+    display: none;
+    /* text-wrap: nowrap; */
+    list-style: none;
+}
+
+.types ul li ul li {
+    background-color:rgba(5, 5, 255, 0.5);
+    color: white;
+    margin: 7px 0;
+    cursor: pointer;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    transition: .3s;
+}
+.types ul li ul li:hover{
+    transform: scale(1.01);
+    color: rgb(255, 187, 0);
+}
+
+/* meals body is start -----> */
+.meals-container {
+    padding: 12px 0;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 11px;
+    position: relative;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 3px 11px -6px;
+    border-radius: 6px;
+}
+
+.card-img-container {
+    width: 300px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-info {
+    width: 300px;
+    height: 83px;
+    overflow-y: hidden;
+    margin: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-self: start;
+}
+
+/* .card-info p {} */
+
+#details-btn {
+    margin: 11px 0;
+    padding: 9px 13px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(42, 42, 211);
+    color: rgb(255, 255, 255);
+    align-self: flex-end;
+    transition: .3s;
+}
+
+#details-btn:hover {
+    background-color: rgb(12, 12, 158);
+    transform: scale(1.01);
+}
+
+
+/* search start  */
+#search-field {
+    padding: 8px 14px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#search-field::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: .5;
+}
+
+#search-field:focus {
+    outline: none;
+}
+
+#search-btn {
+    margin-left: 8px;
+    padding: 7px 14px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(56, 11, 218);
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: rgb(12, 12, 167);
+    transform: scale(1.01);
+
+}
+
+
+
+/* modal section  */
+.modal-section{
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    transition: all .3s;
+}
+.modal-container{
+    width: 600px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    position: relative;
+}
+.modal-info-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.modal-img{
+    width: 30%;
+}
+.modal-container img{
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+.modal-info{
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgba(255, 255, 255);
+    letter-spacing: 0.7px;
+}
+.modal-info p{
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: gold;
+}
+.modal-info p span{
+    /* font-size: 90px; */
+    font-size: 14px;
+    color: white;
+}
+.modal-info p a{
+    color: rgb(15, 233, 8);
+}
+.steps-p{
+    color: rgb(255, 255, 255);
+}
+#Step{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.modal-btn{
+position: absolute;
+top: 6px;
+right: 6px;
+padding: 2px 12px;
+font-size: 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+background-color: blue;
+color: rgb(255, 255, 255);
+transition: .3s;
+}
+.modal-btn:hover{
+background-color: red;
+}
+
+/* footer container is start */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: slateblue;
+    padding: 25px 0;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.f-info-list {
+    list-style: none;
+}
+
+.f-info-list li:hover {
+    text-decoration: underline;
+    transform: scale(1.01);
+    color: rgb(216, 166, 28);
+}
+
+.a-tag {
+    color: rgb(150, 76, 26);
+}
+
+.a-tag:hover {
+    color: rgb(4, 42, 145);
+}
+
+.contact-us {
+    line-height: 30px;
+}
+
+.icon-list {
+    display: flex;
+    gap: 14px;
+    font-size: 25px;
+}
+
+.icon {
+    color: rgb(44, 44, 44);
+    transition: .3s;
+}
+
+.icon:hover {
+    color: black;
+    transform: scale(1.1);
+}
