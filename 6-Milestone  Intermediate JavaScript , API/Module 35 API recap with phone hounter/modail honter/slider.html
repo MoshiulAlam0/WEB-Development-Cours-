@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div-con{
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid;
+        width: 88%;
+        height: 440px;
+        background-image: url(img/new-smartphone-balancing-with-cloth.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        animation: slid 20s ease-in-out  infinite ;
+    }
+    @keyframes slid{
+        20%{background-image: url(img/elegant-smartphone-composition.jpg);}
+        40%{background-image: url(img/new-smartphone-balancing-with-cloth.jpg);}
+        60%{background-image: url(img/f1bea16f-3cf5-46fd-ba0a-c0bc5721a4d7.jpg);}
+        80%{background-image: url(img/roted\ elegant-smartphone-composition\ \(1\).jpg); }
+    }
+    .spiner-div-container{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        gap: 3px;
+    }
+    .spiner-box{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgb(156, 134, 177);
+        animation: loding 1.5s ease-in-out  infinite ;
+    }
+    #spinar-div1{animation-delay: .8s;}
+    #spinar-div2{animation-delay: .4s;}
+    #spinar-div3{animation-delay: .12s;}
+    #spinar-div4{animation-delay: .4s;}
+    @keyframes loding {
+        0%{transform: translateY(0px);}
+        50%{transform: translateY(10px);}
+}
+    
+</style>
+
+<body>
+    <div class="div-con">
+        <div class="text">
+            <h1>hello</h1>
+        </div>
+    </div>
+    <div class="spiner-div-container">
+        <div class="spiner-box" id="spinar-div1"></div>
+        <div class="spiner-box" id="spinar-div2"></div>
+        <div class="spiner-box" id="spinar-div3"></div>
+        <div class="spiner-box" id="spinar-div4"></div>
+    </div>
+</body>
+</html>

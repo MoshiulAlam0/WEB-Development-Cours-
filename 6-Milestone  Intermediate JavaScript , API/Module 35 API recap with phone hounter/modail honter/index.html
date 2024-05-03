@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hounter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="logo/icons8-mobile-shop-47.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- top header is here  -->
+    <section class="top-header-container">
+        <div class="t-header-text">
+            <a href="#">wellcome to my hounter zone.</a>
+        </div>
+        <div class="t-header-contact">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </section>
+
+    <!-- header is here  -->
+    <header class="main-header-container">
+        <div class="m-header-logo">
+            <p>Hounter</p>
+            <h3>Phone</h3>
+        </div>
+        <div class="m-header-search">
+            <h4> Catagory <i class="fa-solid fa-caret-down"></i>
+                <ul class="phone-list" id="brand_name">
+                    <li>Iphone</li>
+                    <li>Samsung</li>
+                    <li>Oppo</li>
+                    <li>Huawei</li>
+                    <li>Blackbary</li>
+                    <li>Realme</li>
+                </ul>
+            </h4>
+            <input id="search-field" type="text" placeholder="search your phone..">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="m-header-account">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <h5>My Account</h5>
+                <p>Login</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- nav is heare  -->
+    <nav class="nav-container">
+        <div class="nav-contant">
+            <ul class="all-catagory">
+                <h4><i class="fa-solid fa-cart-shopping"></i> All catagory<i class="fa-solid fa-caret-down"></i></h4>
+                <ul class="catagory-list" id="all-catagory">
+                    <li>Phone</li>
+                    <li>Watch</li>
+                    <li>Cover</li>
+                </ul>
+            </ul>
+            <ul class="nav-list">
+                <li>Hot product
+                    <hr>
+                </li>
+                <li>social
+                    <hr>
+                </li>
+                <li>countact us
+                    <hr>
+                </li>
+                <li>discount
+                    <hr>
+                </li>
+                <li>new product
+                    <hr>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- bannar && item section  -->
+    <section class="bannar-item-container">
+        <div class="bannar-img-container">
+            <div class="bannar-text-container">
+                <p>Lorem ipsum dolor</p>
+                <h2>New Iphone</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, saepe placeat tempore unde
+                    asperiores ipsum dignissimos architecto iste accusantium. Culpa maxime asperiores voluptatibus
+                    veniam voluptatem dolor error provident officia molestiae?</p>
+                <button class="commonbutton">Order Now</button>
+            </div>
+        </div>
+        <div class="product-icon" id="product-icon-container">
+            <div class="pro-icon" id="all">
+                <img src="product icon/alll product.png" alt="">
+                <p>Auto Refres</p>
+            </div>
+            <div class="pro-icon" id="phone">
+                <img src="product icon/133326-12-apple-iphone-free-hd-image.png" alt="">
+                <p>Phone</p>
+            </div>
+            <div class="pro-icon" id="cover">
+                <img src="product icon/pngegg.png" alt="">
+                <p>Cover</p>
+            </div>
+            <div class="pro-icon" id="watch">
+                <img src="product icon/Smartwatch-PNG-File.png" alt="">
+                <p>watch</p>
+            </div>
+            <div class="pro-icon" id="laptop">
+                <img src="product icon/60-603767_laptop-png.png" alt="">
+                <p>Laptop</p>
+            </div>
+            <div class="pro-icon" id="head-set">
+                <img src="product icon/headphone-2.png" alt="">
+                <p>Head set</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- main body card  section  -->
+    <main id="mainCardSection" class="main-card-section">
+        <div id="card-section">
+            <!-- <div class="card-container">
+                <div class="card-img">
+                    <img src="product icon/iphone-x-pictures6.png" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Name</h4>
+                    <p>adipisicing elit. Error, enim qui! Itaque dolores, perferendis animi labore provident veniam ad excepturi fugit possimus minus quibusdam a, error, qui explicabo nemo recusandae?</p>
+                    <button>Details</button>
+                </div>
+            </div> -->
+        </div>
+        <div class="change-btn-container" id="change-btn-container">
+            <p><i id="backward-btn" class="fa-solid fa-backward change-btn"></i></p>
+            <button class="change-btn" id="see-more">See more</button>
+        </div>
+
+        <div id="loding-container" class="spiner-div-container">
+            <div class="spiner-box" id="spinar-div1"></div>
+            <div class="spiner-box" id="spinar-div2"></div>
+            <div class="spiner-box" id="spinar-div3"></div>
+            <div class="spiner-box" id="spinar-div4"></div>
+        </div>
+    </main>
+
+    <!-- footer section is here  -->
+    <footer class="footer-section">
+        <div class="footer-div">
+            <ul>
+                <li><i class="fa-regular fa-star yellow"></i>Top</li>
+                <li><i class="fa-regular fa-star yellow"></i>Hot</li>
+                <li><i class="fa-regular fa-star yellow"></i>New</li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <ul>
+                <li>Privacy</li>
+                <li>Sequrity</li>
+                <li>Support</li>
+                <li>Help</li>
+                <li>Order zone</li>
+                <li>Corruption</li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h3>Location Aria</h3>
+            <p>Bangladesh bogura shibgonj</p>
+            <p>Market 34</p>
+            <p>Block/B/RodeNo/35/BildingNo/5</p>
+        </div>
+        <div class="footer-div " id="footer-social-div">
+            <h3>Social Countact</h3>
+            <ul>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-gitlab"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- script are here  -->
+    <script src="js/data load.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/search by product.js"></script>
+    <script src="js/search by Catagory.js"></script>
+</body>
+
+</html>
