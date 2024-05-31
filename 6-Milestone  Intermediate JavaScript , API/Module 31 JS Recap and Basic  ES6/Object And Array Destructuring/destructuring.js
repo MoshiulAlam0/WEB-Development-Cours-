@@ -8,6 +8,11 @@ const fish = {
     price: 1200,
     color: 'silver'
 }
+
+// console.log(Object.entries(fish));
+// console.log(delete fish.age);
+// console.log(fish);
+
 // normal way 
 const Fishname = fish.name;
 const fishage = fish.age;
