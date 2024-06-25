@@ -24,7 +24,7 @@ let emran = {
     name: 'emran',
     monney: 6000,
 }
-// 1.methord ke [call] kore:
+// 1.method ke [call] kore:
 let emranRemainingMonney = noman.treat.call(emran, 550, 50);
 console.log(emranRemainingMonney);
 
